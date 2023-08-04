@@ -32,7 +32,7 @@
     height: 75vh;
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/images/banner.jpg);
+      url(../images/banner.jpg);
     background-size: cover;
     background-position: center, center;
     color: #fff;
