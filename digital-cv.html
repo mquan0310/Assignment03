@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogital CV</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 7px solid blue;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+      h2 {
+        border-bottom: 1px solid #bbb5b5c6;
+        padding: 10px;
+      }
+      .box1 .in-box {
+        border-bottom: 1px solid #bbb5b5c6;
+      }
+      .box5 .in-box1 {
+        border-bottom: 2px dashed #8683cec6;
+      }
+      .icon {
+        height: 36px;
+        width: auto;
+      }
+      .in-box {
+        display: flex;
+        padding-top: 8px;
+      }
+      .in-box0 {
+        display: flex;
+        padding-top: 8px;
+      }
+      .in-box1 {
+        display: flex;
+        padding-top: 8px;
+      }
+      .text {
+        padding-left: 8px;
+      }
+
+      /* Chia cột */
+      .box1 {
+        padding: 10px;
+        grid-row: auto;
+        grid-column: auto;
+        border: 3px solid blue;
+      }
+      .box2 {
+        padding: 10px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        border: 3px solid blue;
+      }
+      .box3 {
+        padding: 10px;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        border: 3px solid blue;
+      }
+      .box4 {
+        padding: 10px;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        border: 3px solid blue;
+      }
+      .box5 {
+        padding: 10px;
+        grid-row: 1/3;
+        grid-column: 3/4;
+        border: 3px solid blue;
+      }
+
+      /* Tạo Timeline */
+      .date {
+        font-weight: 900;
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        width: 56px;
+        height: 56px;
+        background-color: rgb(211, 159, 204);
+        border-radius: 50%;
+        border: 3px solid gray;
+        flex-shrink: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        z-index: 777;
+      }
+
+      /* Resposive mobile */
+      @media only screen and (max-width: 600px) {
+        * {
+          box-sizing: border-box;
+        }
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+        }
+        .in-box,
+        .in-box0,
+        .in-box1 {
+          display: flex;
+          flex-direction: column;
+          padding-top: 8px;
+        }
+
+        /* Chia cột */
+        .box1 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box2 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box3 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box4 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box5 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+      }
+      @media only screen and (min-width: 600px) and (max-width: 760px) {
+        * {
+          box-sizing: border-box;
+        }
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+        }
+        .in-box,
+        .in-box0,
+        .in-box1 {
+          display: flex;
+          flex-direction: column;
+          padding-top: 8px;
+        }
+
+        /* Chia cột */
+        .box1 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box2 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box3 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box4 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+        .box5 {
+          grid-row: auto;
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- GOALS -->
+      <div class="box1">
+        <h2>Goals</h2>
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Goal 1</strong></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis totam atque quia ipsam, porro beatae.
+            </p>
+          </div>
+        </div>
+
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Goal 2</strong></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis totam atque quia ipsam, porro beatae.
+            </p>
+          </div>
+        </div>
+
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Goal 3</strong></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis totam atque quia ipsam, porro beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCOPE -->
+      <div class="box2">
+        <h2>Scope</h2>
+        <div class="in-box0">
+          <div class="text">
+            <p><strong>IN</strong></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              possimus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              possimus!
+            </p>
+          </div>
+          <div class="text">
+            <p><strong>OUT</strong></p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              possimus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              possimus!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM -->
+      <div class="box3">
+        <h2>Team</h2>
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Menber 01</strong></p>
+            <p>Name: ...</p>
+          </div>
+        </div>
+
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Menber 02</strong></p>
+            <p>Name: ...</p>
+          </div>
+        </div>
+
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Menber 03</strong></p>
+            <p>Name: ...</p>
+          </div>
+        </div>
+
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p><strong>Menber 04</strong></p>
+            <p>Name: ...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRIMARY -->
+      <div class="box4">
+        <h2>Primary</h2>
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Expedita, commodi.
+            </p>
+          </div>
+        </div>
+        <div class="in-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Expedita, commodi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="box5">
+        <h2>Timeline</h2>
+        <div class="in-box1">
+          <div class="date">01</div>
+          <div class="text">
+            <p><strong>Project Start</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="in-box1">
+          <div class="date">02</div>
+          <div class="text">
+            <p><strong>Project Date</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="in-box1">
+          <div class="date">03</div>
+          <div class="text">
+            <p><strong>Project Date</strong><strong>Project Date</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="in-box1">
+          <div class="date">04</div>
+          <div class="text">
+            <p><strong>Project Date</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="in-box1">
+          <div class="date">05</div>
+          <div class="text">
+            <p><strong>Project Date</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="in-box1">
+          <div class="date">06</div>
+          <div class="text">
+            <p><strong>Project Date</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="in-box1">
+          <div class="date">07</div>
+          <div class="text">
+            <p><strong>Project Date</strong></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
